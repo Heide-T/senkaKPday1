@@ -8,7 +8,10 @@ client.on("ready", (message) => {
 
 //ここから
 
-client.on('MessageCreate', message => {
+
+
+
+client.on('messageCreate', async message => {
     if (message.author.bot) return; // Botには反応しないようにする
     if (message.guild.id !== "1088853446280613940") return; // 指定のサーバー以外では動作しないようにする
     if (message.content.includes("8_Activated")) {
