@@ -9,8 +9,6 @@ client.on("ready", (message) => {
 //ここから
 
 
-
-
 client.on('messageCreate', async message => {
     if (message.author.bot) return; // Botには反応しないようにする
     if (message.guild.id !== "1088853446280613940") return; // 指定のサーバー以外では動作しないようにする
@@ -57,7 +55,7 @@ client.on('messageCreate', async message => {
         message.channel.send("8.370\r\n裏にのりがついている、貼ってはがせるメモだ。 \r\n一枚目にはこう書かれている。 \r\n・お誕生日おめでとう。いかがお過ごしでしょうか。 \r\n・ご意見ご要望がある際は管理室へご連絡ください。\r\nhttps://discord.com/channels/1088853446280613940/1089219511451930804\r\n\r\n机の上を見る>8.300\r\n");
     }
     if (message.content.includes("8.371")) {
-        message.channel.send("8.371\r\n失敗\r\n誰か他の人に対するメモなのだろう。 \r\n\r\n机の上を見る>8.300\r\nもう一度メモの内容を見る ");
+        message.channel.send("8.371\r\n失敗\r\n誰か他の人に対するメモなのだろう。 \r\n\r\n机の上を見る>8.300\r\nもう一度メモの内容を見る>8.360 ");
     }
     if (message.content.includes("8.390")) {
         message.channel.send("8.390\r\nペン\r\nスーパーで1本75円くらいで売られていそうな安っぽい油性ボールペンだ。 \r\n\r\n机の上を見る>8.300");
